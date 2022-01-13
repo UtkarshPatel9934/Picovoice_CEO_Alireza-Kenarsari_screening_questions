@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Redesignd Google’s code snippet widget</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<ul>
+				<li> <a href="#" id="CSharp" class="CS">C#</a> </li>
+				<li> <a href="#" id="Go">Go</a> </li>
+				<li> <a href="#" id="Java">Java</a> </li>
+				<li> <a href="#" id="Node">Node.js</a> </li>
+				<li> <a href="#" id="Php">PHP</a> </li>
+				<li> <a href="#" id="Python">Python</a> </li>
+				<li> <a href="#" id="Ruby">Ruby</a> </li>
+			</ul>
+		</div>
+
+
+		<div class="body">
+			<div class="CSharp_Body">
+				<p>For more information, see <a href="https://cloud.google.com/dotnet/docs/setup">Setting Up a C# Development Environment</a>.</p>
+
+				<p>If you are using Visual Studio 2017 or higher, open nuget package manager window and type the following:</p>
+
+				<div class="code">
+					<p id="CSharpOne">Install-Package Google.Apis</p>
+				</div>
+				
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('CSharpOne');return false;">Copy</button>
+
+				<p>If you are using .NET Core command-line interface tools to install your dependencies, run the following command:</p>
+
+				<div class="code">
+					<p id="CSharpTwo">dotnet add package Google.Apis</p>
+				</div>
+
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('CSharpTwo');return false;">Copy</button>
+			</div>
+
+
+			<div class="Go_Body">
+				<p>For more information, see <a href="https://cloud.google.com/go/docs/setup">Setting Up a Go Development Environment</a>.</p>
+
+				<div class="code">
+					<p id="GoOne">go get cloud.google.com/go
+						/speech/apiv1</p>
+				</div>
+
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('GoOne');return false;">Copy</button>
+			</div>
+
+
+			<div class="Java_Body">
+
+				<div class="code">
+					<pre>
+						<code>
+							<p id="JavaOne">
+&lt;dependencyManagement>
+&lt;dependencies>
+&lt;dependency>
+&lt;groupId>com.google.cloud
+&lt;/groupId>
+&lt;artifactId>libraries-bom
+&lt;/artifactId>
+&lt;version>24.1.2
+&lt;/version>
+&lt;type>pom
+&lt;/type>
+&lt;scope>import
+&lt;/scope>
+&lt;/dependency>
+&lt;/dependencies>
+&lt;/dependencyManagement>
+							      
+&lt;dependencies>
+&lt;dependency>
+&lt;groupId>org.json
+&lt;/groupId>
+&lt;artifactId>json
+&lt;/artifactId>
+&lt;version>20211205
+&lt;/version>
+&lt;/dependency>
+&lt;dependency>
+&lt;groupId>com.google.cloud
+&lt;/groupId>
+&lt;artifactId>
+google-cloud-speech
+&lt;/artifactId>
+&lt;/dependency>
+&lt;/dependencies>
+</p>
+						</code>
+					</pre>
+				</div>
+
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('JavaOne');return false;">Copy</button>
+
+				<p>If you are using <a href="https://gradle.org/">Gradle</a>, add the following to your dependencies:</p>
+	
+	
+				<div class="code">
+					<p id="JavaTwo">implementation platform('com.google.cloud:libraries-bom:24.1.2')
+					<br>
+					<br>
+					implementation 'com.google.cloud:google-cloud-speech'</p>
+				</div>
+	
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('JavaTwo');return false;">Copy</button>
+			</div>
+
+			
+			
+			<div class="NodeJs_Body">
+				<p>For more information, see <a href="https://cloud.google.com/nodejs/docs/setup">Setting Up a Node.js Development Environment</a>.</p>
+				
+				
+				<div class="code">
+					<p id="NodeJsOne">npm install --save @google-cloud/speech</p>
+				</div>
+				
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('NodeJsOne');return false;">Copy</button>
+			</div>
+
+
+
+			<div class="Php_Body">
+				<p>For more information, see <a href="https://cloud.google.com/php/docs">Using PHP on Google Cloud</a>.</p>
+
+				
+				<div class="code">
+					<p id="PHPOne">composer require google/apiclient</p>
+				</div>
+				
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('PHPOne');return false;">Copy</button>
+			</div>
+
+
+
+			<div class="Python_Body">
+				<p>For more information, see <a href="https://cloud.google.com/python/docs/setup">Setting Up a Python Development Environment</a>.</p>
+
+				<div class="code">
+					<p id="PythonOne">gem install google-api-client</p>
+				</div>
+				
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('PythonOne');return false;">Copy</button>
+
+			</div>
+
+			<div class="Ruby_Body">
+				<p>For more information, see <a href="https://cloud.google.com/ruby/docs/setup">Setting Up a Ruby Development Environment</a>.</p>
+
+				<div class="code">
+					<p id="RubyOne">gem install google-api-client</p>
+				</div>
+				
+				<button class="theme">Theme</button>
+				<button onclick="copyTxt('RubyOne');return false;">Copy</button>
+
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
+
+

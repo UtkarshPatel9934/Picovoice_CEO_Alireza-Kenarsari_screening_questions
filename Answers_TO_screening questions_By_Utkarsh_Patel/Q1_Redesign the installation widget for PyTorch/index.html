@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReDesigned installation Widget for PyTorch</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="widgetContainer">
+		<div class="PyTorch_Build_Container">
+			<h2>PyTorch Build</h2>
+			<div class="buttons_PyTorch_Build_Container">
+				<select name="PyTorch_Build" id="PyTorch_Build">
+					<option value="stable">Stable (1.10.1)</option>
+					<option value="preview">Preview (Nightly)</option>
+					<option value="lts">LTS (1.8.2)</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="YourOS_Container">
+			<h2>Your OS</h2>
+			<div class="buttons_YourOS_Container">
+				<select name="YourOS" id="YourOS">
+					<option value="linux">Linux</option>
+					<option value="macos">Mac</option>
+					<option value="windows">Windows</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="Package_Container">
+			<h2>Package</h2>
+			<div class="buttons_Package_Container">
+				<select name="buttons_Package" id="buttons_Package">
+					<option value="conda">Conda</option>
+					<option value="pip">Pip</option>
+					<option value="libtorch">LibTorch</option>
+					<option value="source">Source</option>
+				</select>
+			</div>
+
+		</div>
+		
+		<div class="Language_Container">
+			<h2>Language</h2>
+			<div class="buttons_Language_Container">
+				<select name="buttons_Language" id="buttons_Language">
+					<option value="python">Python</option>
+					<option value="cplusplus">C++/Java</option>
+				</select>
+			</div>
+
+		</div>
+		
+		<div class="Compute_Platform_Container">
+			<h2>Compute Platform</h2>
+			<div class="buttons_Compute_Platform_Container">
+				<select name="buttons_Compute_Platform" id="buttons_Compute_Platform">
+					<option value="cuda10.2">CUDA 10.2</option>
+					<option value="cuda11.x">CUDA 11.1</option>
+					<option value="rocm4.2">ROCm 4.2 (beta)</option>
+					<option value="cpu">CPU</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<input type="submit" value="Get Command">
+
+
+	<div class="RunThisCommand_Container">
+		<div class="CommandContainer">
+			<h2>Run this Command:</h2>
+			<div class="ActualCommand_container">
+				<p id="command">Click on <b><i>Get Command</i><b></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

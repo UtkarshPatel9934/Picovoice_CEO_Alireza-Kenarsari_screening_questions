@@ -1,0 +1,148 @@
+.container{
+	height: auto;
+	width: 100%;
+	margin: auto;
+	border: 1px solid rgb(219, 220, 224);
+	border-radius: 8px;
+}
+
+.navbar{
+	border-bottom: 1px solid rgb(219, 220, 224);
+	background-color: #4FC1E8;
+	border-radius: 8px 8px 0 0;
+}
+
+ul{
+	display: flex;
+	margin-top: 0;
+}
+
+
+ul li{
+	list-style-type: none;
+	padding: 15px 15px 10px 15px;
+	font-weight: 600;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+}
+
+li a{
+	text-decoration: none;
+	color: #ED5564;
+}
+
+ul li a:hover{
+	color: #A0D568;
+	padding-bottom: 13px;
+	border-bottom: 3px solid #A0D568;
+}
+
+.CS{
+	color: #A0D568;
+	padding-bottom: 13px;
+	border-bottom: 3px solid #A0D568;
+}
+
+.body{
+	background-color: #FFCE54;
+	padding: 20px;
+	color: #ED5564;
+	font-weight: 400;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.code{
+	width: auto;
+	margin: auto;
+	padding: 5px 25px;
+	margin: 5px;
+	background-color: rgb(24, 23, 23);
+}
+.codeSection{
+	width: auto;
+	margin: auto;
+	padding: 5px 25px;
+	margin: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+button{
+	margin-left: 8px;
+	background-color: #A0D568;
+	border: none;
+	padding: 5px 9px;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+
+/* C sharp Body */
+.CSharp_Body{
+	display: none;
+}
+/* C sharp Body */
+
+
+/* Go Body */
+.Go_Body{
+	display: none;
+}
+/* Go Body */
+
+
+/* Java Body */
+.Java_Body{
+	display: none;
+}
+/* Java Body */
+
+
+/* Node Body */
+.NodeJs_Body{
+	display: none;
+}
+/* Node Body */
+
+
+/* PHP body */
+.Php_Body{
+	display: none;
+}
+/* PHP body */
+
+
+/* python body */
+.Python_Body{
+	display: none;
+}
+/* python body */
+
+
+/* Ruby Body */
+.Ruby_Body{
+	display: none;
+}
+/* Ruby Body */
+
+
+
+/* Responsiveness for the widget */
+@media screen and (max-width: 600px) {
+	ul{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+      
+/* Responsiveness for the widget */
